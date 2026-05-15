@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: pink; 
+            margin: 0;
+            padding: 20px;
+        }
+        body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* 가로 중앙 */
+    align-items: center;     /* 세로 중앙 */
+  }
+
+  .main-button {
+    padding: 20px 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #4A90E2;
+    border: none;
+    border-radius: 50px;       
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* 살짝 떠 있는 느낌 */
+  }
+
+  /* 마우스 올렸을 때(터치 시) 효과 */
+  .main-button:hover {
+    background-color: #FF6B6B; /* 부드러운 코랄/레드 계열 */
+    transform: scale(1.1);      /* 크기가 1.1배 살짝 커짐 */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  }
+    </style>
+</head>
+<body>
+     <button class="main-button" onclick="window.open('http://127.0.0.1:5500/1.html')">
+    click!
+  </button>
+    </body>
+</html>
